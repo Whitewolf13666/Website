@@ -1,0 +1,86 @@
+/* Шрифт */
+body {
+    font-family: "Deutsch Gothic";
+  }
+  .container {
+    padding: 0 40px;
+    margin-left: 80px;
+  }
+.center-both {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: contain;
+    width: 400px;
+    margin: 50%;
+  }
+/* Свойства ссылок */
+a {
+display: block;
+text-decoration: none;
+margin-bottom: 1.2em;
+position: relative;
+color: blueviolet;
+}
+/* Что делать при наведении на ссылку */
+a:hover {
+    color: red;
+}
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(1.5em);
+    border-bottom: 2px solid blueviolet;
+    width: 280px;
+}
+h1 {
+    color: blueviolet;
+}
+h1:hover {
+    color: red;
+}
+h2 {
+    color: blueviolet;
+}
+h2:hover {
+    color: red;
+}
+/* Своства фотографии */
+.photo {
+    border-radius: 100px;
+/* Радиус скругления */
+ border:  3px solid transparent;
+ border:  3px solid blueviolet;   
+/* Параметры рамки */
+box-shadow: 0 4px 15px 0px blueviolet;
+object-fit: cover;
+}
+.photo:hover {
+    border: 3px solid red;
+    box-shadow: 0 4px 15px 0px red;
+}
+.photo {
+    background-size: contain;
+    height: 200px;
+    width: 200px;  
+    background-size: contain;
+    background-image: url(img/Lira-Karnstein-3.jpg);
+}   
+.photo:hover {   
+    background-size: contain;
+    background-image: url(img/Lira-Karnstein-4.jpg);
+}
+html {
+    background-image: url(img/Night-London-w1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
